@@ -30,7 +30,7 @@ export const Projects = () => {
                         <h2>
                             Project
                         </h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text</p>
+                        <p>Below will be my projects</p>
                         <Carousel responsive={responsive} infinite={true} className="project-slider">
                             <div className = "item">
                                 <img src = {''} alt = "Image" />
