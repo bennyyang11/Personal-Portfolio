@@ -1,3 +1,6 @@
+import meter1 from "../assets/img/meter1.svg";
+import meter2 from "../assets/img/meter2.svg";
+import meter3 from "../assets/img/meter3.svg";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import clogo from "../assets/img/cpp_space_logo_adjusted.png";
@@ -34,19 +37,19 @@ export const Skills = () => {
                         <p>Below will be my skills</p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className = "item">
-                                <img src = {clogo} alt = "Image" />
+                                <img src = {meter1} alt = "Image" />
                                 <h5>C++ </h5>
                             </div>
                             <div className = "item">
-                                <img src = {''} alt = "Image" />
+                                <img src = {meter1} alt = "Image" />
                                 <h5>Python </h5>
                             </div>
                             <div className = "item">
-                                <img src = {''} alt = "Image" />
+                                <img src = {meter2} alt = "Image" />
                                 <h5>Java </h5>
                             </div>
                             <div className = "item">
-                                <img src = {''} alt = "Image" />
+                                <img src = {meter3} alt = "Image" />
                                 <h5>JavaScript</h5>
                             </div>
                         </Carousel>
