@@ -34,7 +34,7 @@ export const Skills = () => {
                         <h2>
                             Skills
                         </h2>
-                        <p>Below will be my skills</p>
+                        <p>In my skills section, you'll find a strong foundation in programming languages like C++, Python, and JavaScript. With C++, I build efficient and high-performance applications, while Python allows me to work seamlessly in data analysis and automation. JavaScript powers my ability to create dynamic, interactive web experiences. Together, these skills enable me to tackle diverse challenges and deliver robust solutions across various platforms.</p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className = "item">
                                 <img src = {meter1} alt = "Image" />
