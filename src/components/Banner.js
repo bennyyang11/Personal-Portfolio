@@ -47,7 +47,7 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{'Hello, I am Benjamin a '}<span className="wrap">{text}</span></h1>
-                        <p>Personal Message here</p>
+                        <p>Welcome to my personal portfolio! I'm Benjamin, a passionate web developer with a love for both coding and sports. This site showcases the projects I've worked on, reflecting my dedication to creating efficient and innovative solutions. When I'm not coding, you can find me enjoying a game or staying active, always seeking balance between my professional and personal passions. Explore my work and feel free to connect with me!</p>
                         <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
