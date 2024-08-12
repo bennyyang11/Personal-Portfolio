@@ -35,7 +35,7 @@ export const Projects = () => {
                   {({ isVisible }) =>
                   <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                     <h2>Projects</h2>
-                    <p>General Project description about tabs</p>
+                    <p>I developed a responsive weather application and a functional calculator, each demonstrating key aspects of front-end development. The weather app fetches real-time data from a public API, providing users with current weather conditions, forecasts, and additional details like temperature and humidity for locations worldwide. The calculator performs basic arithmetic operations with a user-friendly interface and real-time calculation display. Both projects emphasize clean UI design, efficient data handling, and effective state management.</p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                       <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
