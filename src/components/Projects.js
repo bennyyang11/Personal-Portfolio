@@ -10,18 +10,18 @@ export const Projects = () => {
     
     const projects = [
         {
-          title: "Project Name",
-          description: "Type of project",
+          title: "Connect 4",
+          description: "A Connect 4 game developed for the STM32F429i touchscreen board, featuring both single-player and AI modes where users can play against the computer.",
           imgUrl: projImg1,
         },
         {
-            title: "Project Name",
-            description: "Type of project",
+            title: "RISC V Processor",
+            description: "A custom 5-stage pipelined RISC-V processor designed to execute instructions efficiently, demonstrating key stages of instruction fetch, decode, execute, memory access, and write-back.",
             imgUrl: projImg2,
           },
           {
-            title: "Project Name",
-            description: "Type of project",
+            title: "Product Management API",
+            description: "A RESTful API management project built using Node.js, Express, and MongoDB, featuring full CRUD operations, optimized query performance, and robust error handling for seamless backend integration.",
             imgUrl: projImg3,
           },
       ];
@@ -41,12 +41,12 @@ export const Projects = () => {
                         <Nav.Item>
                           <Nav.Link eventKey="first">C++ Projects</Nav.Link>
                         </Nav.Item>
-                        <Nav.Item>
+                        {/*<Nav.Item>
                           <Nav.Link eventKey="second">JavaScript Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                           <Nav.Link eventKey="third">Python Projects</Nav.Link>
-                        </Nav.Item>
+                        </Nav.Item>*/}
                       </Nav>
                       <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                         <Tab.Pane eventKey="first">
@@ -95,14 +95,14 @@ export const Projects = () => {
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
                         </Tab.Pane>
                         <Tab.Pane eventKey="first">
-                          <p>Project description</p>
+                          <p>Developed a range of hands-on projects across software engineering, embedded systems, processor design, and full-stack web development, demonstrating strong problem-solving skills and the ability to build efficient, user-focused solutions from low-level hardware to high-level APIs.</p>
                         </Tab.Pane>
-                        <Tab.Pane eventKey="second">
+                        {/*<Tab.Pane eventKey="second">
                           <p>Project description</p>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
                           <p>Project description</p>
-                        </Tab.Pane>
+                        </Tab.Pane>*/}
                       </Tab.Content>
                     </Tab.Container>
                   </div>}
