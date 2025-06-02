@@ -47,7 +47,8 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{'Hello, I am Benjamin a '}<span className="wrap">{text}</span></h1>
-                        <p>Welcome to my personal portfolio! I'm Benjamin, a passionate web developer with a love for both coding and sports. This site showcases the projects I've worked on, reflecting my dedication to creating efficient and innovative solutions. When I'm not coding, you can find me enjoying a game or staying active, always seeking balance between my professional and personal passions. Explore my work and feel free to connect with me!</p>
+                        <p>I'm Benjamin, a recent graduate from the University of Colorado Boulder, where I earned a Bachelor of Arts & Science in Computer Science with a minor in Computer Engineering. I'm currently working as a Cloud Desktop Engineer at IBM, where I support scalable cloud-based infrastructure and contribute to enterprise-level IT solutions.</p>
+                        <p>This site highlights some of the projects I've developed, demonstrating my technical skills, creative problem-solving, and commitment to continuous learning. Beyond the screen, I enjoy sports and staying active — always striving to maintain a healthy balance between my professional growth and personal passions.</p>
                         <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>

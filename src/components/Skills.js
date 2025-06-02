@@ -1,62 +1,93 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
 import { Col, Container, Row } from "react-bootstrap";
-import Carousel from "react-multi-carousel";
-import clogo from "../assets/img/cpp_space_logo_adjusted.png";
-import "react-multi-carousel/lib/styles.css";
 
 export const Skills = () => {
-    const responsive = {
-        superLargeDesktop: {
-            breakpoint: { max:4000, min:3000 },
-            items: 5
-        },
-        desktop: { 
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3
-        },
-        tablet: {
-            breakpoint: {max: 1024, min:464 },
-            items: 2
-        },
-        mobile: {
-            breakpoint: {max: 464, min: 0 },
-            items: 1
+  return (
+    <section className="skills" id="skills">
+      <Container>
+        <h2 className="text-center mb-5 text-white">Skills</h2>
+        <Row className="skill-row">
+          {/* Technical Skills Box */}
+          <Col md={4}>
+            <div className="skill-bx">
+              <h3 className="text-white">Technical Skills</h3>
+              <ul className="skill-list">
+                <li>C++</li>
+                <li>C</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Bash Shell/Scripting</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+          </Col>
+
+          {/* Tools Box */}
+          <Col md={4}>
+            <div className="skill-bx">
+              <h3 className="text-white">Tools</h3>
+              <ul className="skill-list">
+                <li>Git</li>
+                <li>Linux</li>
+                <li>Docker</li>
+                <li>AWS (DynamoDB, MongoDB)</li>
+                <li>VMware</li>
+                <li>Jira</li>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+          </Col>
+
+          {/* Soft Skills Box */}
+          <Col md={4}>
+            <div className="skill-bx">
+              <h3 className="text-white">Soft Skills</h3>
+              <ul className="skill-list">
+                <li>Team Collaboration</li>
+                <li>Problem Solving</li>
+                <li>Adaptability</li>
+                <li>Time Management</li>
+                <li>Communication</li>
+                <li>Critical Thinking</li>
+                <li>Leadership</li>
+              </ul>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+      <style jsx>{`
+        .skills {
+          padding-bottom: 60px;
         }
-    };
-    return (
-        <section className="skills" id="skills">
-            <Container>
-                <Row>
-                    <Col>
-                     <div className="skill-bx">
-                        <h2>
-                            Skills
-                        </h2>
-                        <p>In my skills section, you'll find a strong foundation in programming languages like C++, Python, and JavaScript. With C++, I build efficient and high-performance applications, while Python allows me to work seamlessly in data analysis and automation. JavaScript powers my ability to create dynamic, interactive web experiences. Together, these skills enable me to tackle diverse challenges and deliver robust solutions across various platforms.</p>
-                        <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                            <div className = "item">
-                                <img src = {meter1} alt = "Image" />
-                                <h5>C++ </h5>
-                            </div>
-                            <div className = "item">
-                                <img src = {meter1} alt = "Image" />
-                                <h5>Python </h5>
-                            </div>
-                            <div className = "item">
-                                <img src = {meter2} alt = "Image" />
-                                <h5>Java </h5>
-                            </div>
-                            <div className = "item">
-                                <img src = {meter3} alt = "Image" />
-                                <h5>JavaScript</h5>
-                            </div>
-                        </Carousel>
-                     </div>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-    )
-}
+
+        .skill-row {
+          margin-top: 40px; /* pushes boxes down */
+        }
+
+        .skill-list {
+          list-style-type: none;
+          padding: 0;
+          margin-top: 20px;
+          font-size: 1.25rem;
+          font-weight: 500;
+          color: white;
+        }
+
+        .skill-list li {
+          margin-bottom: 12px;
+        }
+
+        .skill-bx {
+          background: #151515;
+          border-radius: 64px;
+          text-align: center;
+          padding: 60px 50px;
+          margin-bottom: 30px;
+        }
+      `}</style>
+    </section>
+  );
+};
